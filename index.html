@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Be My Valentine?</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      overflow: hidden;
+      background-color: pink;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      position: relative;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+    }
+    .buttons a,
+    .buttons button {
+      font-size: 1.2em;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      text-decoration: none;
+      color: black;
+      text-align: center;
+      line-height: 1.5;
+      width: 100px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .yes {
+      background-color: lightgreen;
+    }
+    .no {
+      background-color: lightcoral;
+    }
+  </style>
+  <script>
+    function moveNoButton() {
+      const button = document.querySelector(".no");
+      // Change position to fixed so left/top are relative to the viewport.
+      button.style.position = "fixed";
+      const padding = 20; // Padding from the screen edge
+      // Calculate maximum X and Y positions
+      const maxX = window.innerWidth - button.offsetWidth - padding;
+      const maxY = window.innerHeight - button.offsetHeight - padding;
+      const x = Math.random() * maxX + padding / 2;
+      const y = Math.random() * maxY + padding / 2;
+      button.style.left = `${x}px`;
+      button.style.top = `${y}px`;
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".no").addEventListener("mouseover", moveNoButton);
+    });
+  </script>
+</head>
+<body>
+  <h1>Will you be my Valentine? 💖</h1>
+  <div class="buttons">
+    <a href="./index1.html" class="yes">Yes</a>
+    <button class="no">No</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Dump</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
+    /* Header */
+    header {
+      background-color: #ff6f61;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Sections */
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    /* Gallery */
+    #gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px; /* Increased space between images */
+    }
+
+    #gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Invitation Section */
+    .invitation {
+      background-color: #ffe0b2;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    /* Style for RSVP anchor to mimic button appearance */
+    .rsvp-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff6f61;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .rsvp-button:hover {
+      background-color: #e85d50;
+    }
+
+    /* Carbonara Section */
+    .info-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .info-section img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .info-section .content {
+      flex: 1;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ff6f61; /* Match header background */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .info-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Food Dump</h1>
+    <p>FOOOOOOOOOODDDDDDDDDDDDD</p>
+  </header>
+
+  <!-- Favorite Meal: Carbonara Section (moved to the top) -->
+  <section id="carbonara-section">
+    <h2>Carbonara</h2>
+    <div class="info-section">
+      <img src="./IMG_9389.jpeg" alt="Delicious Carbonara">
+      <div class="content">
+        <p>
+          The first time I made carbonara for you, you were doubting it so much, but after you tried you loved it and it has become one of our favorite meals hahahahhahaha. I love making it together with you, it is always so fun and the food is always so delicious. Whenever you are craving carbonara, just let me know and I will make it for you anytime, no matter what😘
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section with more image placeholders -->
+  <section id="gallery-section">
+    <h2>Small Food Dump</h2>
+    <div id="gallery">
+      <img src="./1.jpeg" alt="Food picture 1">
+      <img src="./2.jpeg" alt="Food picture 2">
+      <img src="./3.jpeg" alt="Food picture 3">
+      <img src="./4.jpeg" alt="Food picture 4">
+      <img src="./5.jpeg" alt="Food picture 5">
+      <img src="./6.jpeg" alt="Food picture 6">
+      <!-- Add more images as needed -->
+    </div>
+  </section>
+
+  <!-- Dinner Date Invitation (moved to the bottom) -->
+  <section id="invitation-section">
+    <h2>Valentines Date Invitation</h2>
+    <div class="invitation">
+      <p>
+        My Love, would you mind to join me on a date at 牛角 for our first Valentines day together?
+      </p>
+      <!-- Changed button to an anchor tag that links to another page -->
+      <a class="rsvp-button" href="./index3.html">YES</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>🥰Happy Day 43 / Forever🥰</p>
+  </footer>
+</body>
+</html>
